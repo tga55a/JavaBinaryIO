@@ -28,7 +28,6 @@ public class Exercise17_01 {
         // Hint: Separate integers with a space
         
         try (PrintWriter writer = new printWriter( new FileWriter(file), true )) {
-            writer.println("6 7");
             for (int i = 0; i < 100; i++) {
                 int randInt = (int)(Math.random() * 10);
                 writer.println(randInt + " ");
