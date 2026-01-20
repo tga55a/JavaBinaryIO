@@ -27,10 +27,10 @@ public class Exercise17_01 {
         // Hint: Use Math.random() to generate random integers
         // Hint: Separate integers with a space
         
-        try (PrintWriter writer = new printWriter( new FileWriter(file), true )) {
+        try (PrintWriter writer = new PrintWriter( new FileWriter(file, true) )) {
             for (int i = 0; i < 100; i++) {
                 int randInt = (int)(Math.random() * 10);
-                writer.println(randInt + " ");
+                writer.print(randInt + " ");
             }
         }
 
